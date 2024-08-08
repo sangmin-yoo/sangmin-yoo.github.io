@@ -1,0 +1,70 @@
+///
+/// Editorial by Pixelarity
+/// pixelarity.com | hello@pixelarity.com
+/// License: pixelarity.com/license
+///
+
+/* Section/Article */
+
+	section, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+	header {
+		p {
+			font-family: _font(family-heading);
+			font-size: 1em;
+			font-weight: _font(weight-heading-alt);
+			letter-spacing: _font(kerning-heading);
+			margin-top: -0.5em;
+			text-transform: uppercase;
+		}
+
+		&.major {
+			> :last-child {
+				border-bottom: solid 3px _palette(accent);
+				display: inline-block;
+				margin: 0 0 _size(element-margin) 0;
+			 	padding: 0 0.75em 0.5em 0;
+			}
+		}
+
+		&.main {
+			> :last-child {
+				margin: 0 0 (_size(element-margin) * 0.5) 0;
+			}
+		}
+	}
+
+	div{
+		&.container{
+			width: 100%;
+			padding: 20px 0;
+		}
+		&.describe{
+			padding: 0 15%;
+		}
+		&.square{
+			float: left;
+			width: 10%; 
+			height: 10%; 
+			overflow:hidden;
+		}
+		&.square > img{
+			width: 100%;
+			height: 100%;
+		}
+		&.circle{
+			float: left;
+			width: 10%; 
+			height: 10%; 
+			border-radius:50%; 
+			overflow:hidden;
+		}
+		&.circle > img{
+			width: 100%;
+			height: 100%;
+		}
+	}

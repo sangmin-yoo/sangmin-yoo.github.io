@@ -1,0 +1,57 @@
+{% comment %}
+
+	Editorial by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+
+	Name:
+
+		Sidebar
+
+	Description:
+
+		Site navigation, related content, and contact info.
+
+	Example:
+
+		{% include layout/sidebar.html %}
+
+{% endcomment %}
+
+<!-- Sidebar -->
+	<div id="sidebar">
+		<div class="inner">
+
+			<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="{{ site.baseurl }}/">Homepage</a></li>
+						<li><a href="{{ site.baseurl }}/me.html">People</a></li>
+						<li><a href="{{ site.baseurl }}/research.html">Projects</a></li>
+						<li><a href="{{ site.baseurl }}/publication.html">Publications</a></li>
+						<li><a href="{{ site.baseurl }}/facility.html">Facilities</a></li>
+					</ul>
+				</nav>
+
+			<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Get in touch</h2>
+					</header>
+					<ul class="contact">
+						<li class="icon solid fa-envelope">sieun.chae@oregonstate.edu</li>
+						<li class="icon solid fa-home">
+							KEC 3093 </li>
+					</ul>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright">&copy; Sieun Chae. Updated on May 21st, 2023.</p>
+				</footer>
+
+		</div>
+	</div>
