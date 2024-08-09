@@ -1,8 +1,3 @@
-plugins:
-  - jekyll-remote-theme
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark"
-
 # Site settings
 title: Neural Electronics Lab
 tagline: By Pixelarity
@@ -24,11 +19,3 @@ sass:
 # Pagination
 paginate: 4
 paginate_path: "/blog/page:num/"
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets`
