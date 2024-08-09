@@ -58,7 +58,7 @@
 		margin: 0 0 _size(element-margin) 0;
 	}
 
-	h1, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-family: _font(family-heading);
 		font-weight: _font(weight-heading);
@@ -72,7 +72,7 @@
 		}
 	}
 
-	h2 {
+	h2_OSU {
 		color: $orange;
 		font-family: _font(family-heading);
 		font-weight: _font(weight-heading);
@@ -92,7 +92,7 @@
 		line-height: 1.3;
 	}
 
-	h2 {
+	h2, h2_OSU {
 		font-size: 1.75em;
 	}
 
