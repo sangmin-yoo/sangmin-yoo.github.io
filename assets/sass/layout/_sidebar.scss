@@ -13,7 +13,7 @@
 
 			&:before {
 				@include vendor('transform', 'scaleX(-1)');
-				color: #222222;
+				color: #000000;
 				content: '\f002';
 				cursor: default;
 				display: block;
@@ -43,7 +43,7 @@
 			'margin-left 0.5s ease',
 			'box-shadow 0.5s ease'
 		));
-		background: #222222;
+		background: #000000;
 		font-size: 0.9em;
 		color: #ffffff;
 		position: relative;
