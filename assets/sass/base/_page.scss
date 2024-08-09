@@ -34,8 +34,7 @@
 		}
 
 	body {
-		<!---background: _palette(bg);--->
-		background: #FFEBEE;
+		background: _palette(dark);
 
 		// Stops initial animations until page loads or stops resizing.
 			&.is-preload,
