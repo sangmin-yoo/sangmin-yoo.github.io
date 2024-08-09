@@ -7,7 +7,6 @@
 /* Type */
 
 	body, input, select, textarea {
-		<!---color: _palette(fg);--->
 		color: #ffffff;
 		font-family: _font(family);
 		font-size: 13pt;
@@ -33,7 +32,7 @@
 			'border-bottom-color #{_duration(transition)} ease-in-out'
 		));
 		border-bottom: dotted 1px;
-		color: _palette(fg);
+		color: #ffffff;
 		text-decoration: none;
 
 		&:hover {
@@ -47,7 +46,7 @@
 	}
 
 	strong, b {
-		color: _palette(fg-bold);
+		color: #ffffff;
 		font-weight: _font(weight-bold);
 	}
 
