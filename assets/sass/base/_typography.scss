@@ -141,7 +141,8 @@
 	}
 
 	code {
-		background: _palette(border-bg);
+		<!---background: _palette(border-bg);--->
+		background: #FFEBEE;
 		border-radius: _size(border-radius);
 		border: solid 1px _palette(border);
 		font-family: _font(family-fixed);
