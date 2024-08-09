@@ -9,7 +9,7 @@
 	#menu {
 		ul {
 			@include vendor('user-select', 'none');
-			color: _palette(fg-bold);
+			color: #ffffff;
 			font-family: _font(family-heading);
 			font-weight: _font(weight-heading-alt);
 			letter-spacing: _font(kerning-heading);
@@ -73,7 +73,7 @@
 				padding: 0.5em 0 0 0;
 
 				> ul {
-					color: _palette(fg-light);
+					color: #ffffff;
 					display: none;
 					margin: 0.5em 0 1.5em 0;
 					padding-left: 1em;
