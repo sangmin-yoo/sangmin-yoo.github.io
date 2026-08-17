@@ -1,0 +1,45 @@
+name: Update Publications from Google Scholar
+
+on:
+  schedule:
+    # Runs at 08:00 UTC on the 1st and 15th of every month (~every other week)
+    - cron: "0 8 1,15 * *"
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-bib:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install scholarly
+
+      - name: Fetch latest publications from Google Scholar
+        run: python fetch_scholar_bib.py --scholar-id lTveB5cAAAAJ --out publications.bib --use-proxy
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add publications.bib
+          if git diff --cached --quiet; then
+            echo "No changes to publications.bib"
+          else
+            git commit -m "Auto-update publications.bib from Google Scholar"
+            git push
+          fi
+
+      - name: Nudge BibBase to refresh its cache
+        if: success()
+        run: |
+          curl -s "https://bibbase.org/show?bib=https://sangmin-yoo.github.io/publications.bib&nocache=1" > /dev/null || true
