@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="504" viewBox="564 266 560 504" font-family="DM Sans, Fira Sans, sans-serif">
+<defs>
+ <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="7" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+ <filter id="glowS" x="-30%" y="-30%" width="160%" height="160%">
+  <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+ <filter id="txt" x="-10%" y="-30%" width="120%" height="160%">
+  <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="b"/>
+  <feFlood flood-color="#ffffff" flood-opacity="0.35"/><feComposite in2="b" operator="in" result="g"/>
+  <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+ </filter>
+ <linearGradient id="fB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b2a5e"/><stop offset="1" stop-color="#050d1f"/></linearGradient>
+ <linearGradient id="fM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3d0f52"/><stop offset="1" stop-color="#12051a"/></linearGradient>
+ <linearGradient id="fG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d3d14"/><stop offset="1" stop-color="#041206"/></linearGradient>
+ <linearGradient id="fT" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a2350"/><stop offset="1" stop-color="#040b1c"/></linearGradient>
+ <linearGradient id="arrG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7cf27c" stop-opacity="0.15"/><stop offset="1" stop-color="#8af58a"/></linearGradient>
+ <linearGradient id="arrB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b82f6" stop-opacity="0.2"/><stop offset="1" stop-color="#7cc4ff"/></linearGradient>
+ <linearGradient id="cellB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5fb4ff"/><stop offset="1" stop-color="#1f6fe0"/></linearGradient>
+ <linearGradient id="cellO" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffcf6b"/><stop offset="1" stop-color="#f08a12"/></linearGradient>
+</defs>
+<rect x="564" y="266" width="560" height="504" fill="#000"/>
+<rect x="588" y="290" width="512" height="456" rx="26" fill="url(#fM)" stroke="#b44dff" stroke-width="5" filter="url(#glow)"/>
+<text x="844.0" y="336" font-size="30" font-weight="700" fill="#fff" text-anchor="middle" filter="url(#txt)" >Cross-Layer Design Automation</text>
+<text x="844.0" y="368" font-size="20" font-weight="500" fill="#e3b8ff" text-anchor="middle" >Boundary 2: The Abstraction Tax</text>
+<line x1="594" y1="386" x2="1094" y2="386" stroke="#b44dff" stroke-opacity="0.55" stroke-width="2"/>
+<g opacity="1"><polygon points="648,412 858,412 838,452 628,452" fill="#ff9f1a" fill-opacity="0.35" stroke="#ffb347" stroke-width="2.5" filter="url(#glowS)"/></g>
+<text x="743" y="439" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" filter="url(#txt)" >System Spec</text>
+<g opacity="0.45"><line x1="743" y1="454" x2="743" y2="470" stroke="#c4b5fd" stroke-width="2"/></g>
+<text x="866" y="469" font-size="14" font-weight="600" fill="#ff6b6b" text-anchor="start" >tax</text>
+<g opacity="0.45"><polygon points="648,474 858,474 838,514 628,514" fill="#6d28d9" fill-opacity="0.35" stroke="#8b5cf6" stroke-width="2.5" filter="url(#glowS)"/></g>
+<text x="743" y="501" font-size="18" font-weight="600" fill="#d8c4ff" text-anchor="middle" >Architecture</text>
+<g opacity="0.45"><line x1="743" y1="516" x2="743" y2="532" stroke="#c4b5fd" stroke-width="2"/></g>
+<text x="866" y="531" font-size="14" font-weight="600" fill="#ff6b6b" text-anchor="start" >tax</text>
+<g opacity="0.45"><polygon points="648,536 858,536 838,576 628,576" fill="#6d28d9" fill-opacity="0.35" stroke="#8b5cf6" stroke-width="2.5" filter="url(#glowS)"/></g>
+<text x="743" y="563" font-size="18" font-weight="600" fill="#d8c4ff" text-anchor="middle" >RTL</text>
+<g opacity="0.45"><line x1="743" y1="578" x2="743" y2="594" stroke="#c4b5fd" stroke-width="2"/></g>
+<text x="866" y="593" font-size="14" font-weight="600" fill="#ff6b6b" text-anchor="start" >tax</text>
+<g opacity="0.45"><polygon points="648,598 858,598 838,638 628,638" fill="#6d28d9" fill-opacity="0.35" stroke="#8b5cf6" stroke-width="2.5" filter="url(#glowS)"/></g>
+<text x="743" y="625" font-size="18" font-weight="600" fill="#d8c4ff" text-anchor="middle" >Gate Netlist</text>
+<g opacity="0.45"><line x1="743" y1="640" x2="743" y2="656" stroke="#c4b5fd" stroke-width="2"/></g>
+<text x="866" y="655" font-size="14" font-weight="600" fill="#ff6b6b" text-anchor="start" >tax</text>
+<g opacity="1"><polygon points="648,660 858,660 838,700 628,700" fill="#ff9f1a" fill-opacity="0.35" stroke="#ffb347" stroke-width="2.5" filter="url(#glowS)"/></g>
+<text x="743" y="687" font-size="18" font-weight="700" fill="#fff" text-anchor="middle" filter="url(#txt)" >Standard Cells</text>
+<path d="M864 428 C958 452, 958 652, 872 680" fill="none" stroke="#ffd166" stroke-width="5" stroke-dasharray="0" filter="url(#glow)"/>
+<polygon points="860,684 880,668 884,690" fill="#ffd166" filter="url(#glowS)"/>
+<text x="950" y="504" font-size="17" font-weight="700" fill="#ffd166" text-anchor="start" filter="url(#txt)" >Direct</text>
+<text x="950" y="524" font-size="15" font-weight="600" fill="#ffd166" text-anchor="start" >spec&#8594;cells</text>
+<g filter="url(#glow)"><path d="M998 612 a36 36 0 1 1 10 25" fill="none" stroke="#e879f9" stroke-width="5"/>
+<polygon points="1004,650 1016,630 994,628" fill="#e879f9"/></g>
+<g filter="url(#glowS)"><ellipse cx="1034" cy="600" rx="15" ry="5" fill="#f0abfc"/><path d="M1019 600 v22 a15 5 0 0 0 30 0 v-22" fill="#a21caf" stroke="#f0abfc" stroke-width="1.5"/><path d="M1019 611 a15 5 0 0 0 30 0" fill="none" stroke="#f0abfc" stroke-width="1.5"/></g>
+<text x="1034" y="678" font-size="16" font-weight="700" fill="#f5d0fe" text-anchor="middle" >Learns from</text>
+<text x="1034" y="698" font-size="16" font-weight="700" fill="#f5d0fe" text-anchor="middle" >every design</text>
+</svg>
